@@ -1,12 +1,13 @@
 public class HelloApp {
     public static void main(String[] args) {
-        // Check if no arguments were provided
+        // Check if no arguments are provided
         if (args.length == 0) {
-            System.out.println("Hello World");
+            System.out.println("Hello, World!");
         } else {
-            // Join all elements in the args array with a space
-            String names = String.join(" ", args);
-            System.out.println("Hello " + names);
+            // Use enhanced for-loop (for-each) to process multiple names
+            for (String name : args) {
+                System.out.println("Hello, " + name + "!");
+            }
         }
     }
 }
